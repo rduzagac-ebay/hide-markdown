@@ -2,8 +2,10 @@
 
 ![Github Actions Status](https://github.com/rduzagac-ebay/hide-markdown/workflows/Build/badge.svg)
 
-Hides markdown cells
-
+Hides markdown cells for easier development. This JupyterLab extension was inspired by the
+[jupyterlab-hide-code](https://github.com/osscar-org/jupyterlab-hide-code) 
+JupyterLab extension from (OSSCAR)
+Open Software Services for Classrooms and Research – An Open Science Educational Hub
 
 
 ## Requirements

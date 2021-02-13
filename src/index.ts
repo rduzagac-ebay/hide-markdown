@@ -39,6 +39,7 @@ export class ButtonExtension
     const hideMD = () => {
       panel.content.widgets.forEach(cell => {
         if (cell.model.type === 'markdown') {
+          console.log('Hide markdown cells')
           const layout = cell.layout as PanelLayout;
           layout.widgets[1].hide();
         }
@@ -49,6 +50,7 @@ export class ButtonExtension
     const showMD = () => {
       panel.content.widgets.forEach(cell => {
         if (cell.model.type === 'markdown') {
+          console.log('Show markdown cells')
           const layout = cell.layout as PanelLayout;
           layout.widgets[1].show();
         }
@@ -60,7 +62,7 @@ export class ButtonExtension
 
     const hideButton = new ToolbarButton({
       className: 'hmButton',
-      iconClass: 'fas fa-file-code  hm-buttons',
+      iconClass: 'fas fa-file-code hm-buttons',
       onClick: hideMD,
       tooltip: 'Hide Markdown'
     });
